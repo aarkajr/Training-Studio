@@ -47,7 +47,6 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  /* transition: 0.3s ease; */
   transition: background 0.35s ease, box-shadow 0.35s ease, height 0.35s ease;
 }
 
@@ -77,6 +76,9 @@ header.scrolled .hamburger {
   line-height: 5rem;
   text-transform: uppercase;
   font-weight: 800;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 span {
   color: #ed563b;
@@ -647,6 +649,11 @@ footer {
   .logo{
     margin-right: 12.5rem;
   }
+  @media (max-width: 320px){
+    .logo{
+      font-size: ;
+    }
+  }
   
   .grid-container{
       grid-template-columns: 1fr;
@@ -662,12 +669,10 @@ footer {
 }
 
 @media (max-width: 776px) {
-  .nav-bar {
   
-  
-  }
-  .logo h1{
-    color: #000;
+  .logo h1 {
+    font-size: 1.5rem;
+     color: #000;
   }
   header{
     position: fixed;
@@ -696,7 +701,6 @@ footer {
    .cards {
     grid-template-columns: repeat(2, 1fr);
   }
- 
   
     .grid-container{
       grid-template-columns: 1fr;
@@ -770,68 +774,27 @@ footer {
     grid-template-columns:  1fr;
   }
  } 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media (max-width: 768px) {
-  .nav-bar ul {
-    display: none;
-  }
-  .container{
-    
-    
-  }
-  .nav-bar {
-    background-color: #f7f7f7;
-    /* padding: 0px 15px; */
-    /* height: 100px;
-    box-shadow: none;
-    text-align: center;
-    width: 100%;
-    z-index: 1;
-    
-  }
-  .logo {
-    align-items: flex-start;
-    display: block;
-    background-color: #f7f7f7;
-    padding: 0px 15px;
-    height: 80px;
-    box-shadow: none;
-    text-align: center;
-  }
+ @media (max-width: 480px) {
   .logo h1 {
+    font-size: 1.2rem;
     color: #000;
   }
-  .hamburger {
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 10%;
-    width: 50px;
-    height: 50px;
-    color: black;
-    right: 5%;
-    border-radius: 50%;
-    font-size: 2rem;
-  }
-} */ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
