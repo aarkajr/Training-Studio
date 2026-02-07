@@ -673,6 +673,7 @@ footer {
   .logo h1 {
     font-size: 1.5rem;
      color: #000;
+    margin-left: 6.5rem;
   }
   header{
     position: fixed;
