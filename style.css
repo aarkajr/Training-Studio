@@ -680,6 +680,9 @@ footer {
      .grid-classes {
     grid-template-columns: 1fr;
   }
+  .table-grid {
+    grid-template-columns: 1fr 1fr;
+  }
   contact-section{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -761,7 +764,7 @@ footer {
     font-size: 14px;
   }
   .table-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .cell {
