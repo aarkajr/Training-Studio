@@ -764,7 +764,8 @@ footer {
     font-size: 14px;
   }
   .table-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  
   }
 
   .cell {
