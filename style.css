@@ -200,7 +200,7 @@ span {
 /* Hero Setion */
 .hero-content {
   text-align: center;
-  width: 80%;
+  width: min(90%, 900px);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -208,34 +208,35 @@ span {
   z-index: 3;
   color: #fff;
 }
+
+/* subtitle */
 .hero-content p {
-  font-size: 1.125rem;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
   font-weight: 800;
-  color: #fff;
   text-transform: uppercase;
 }
+
+/* main heading */
 .hero-content h1 {
-  margin-top: 1.875rem;
-  margin-bottom: 1.5625;
-  font-size: 5.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: clamp(2.2rem, 7vw, 5.2rem);
   text-transform: uppercase;
   font-weight: 800;
-  color: #fff;
-  letter-spacing: 0.0625rem;
+  letter-spacing: 1px;
+  line-height: 1.1;
 }
-.span {
-  color: #ed563b;
-}
+
+/* button */
 .btn {
+  display: inline-block;
   background-color: #ed563b;
   color: #fff;
-  font-size: 0.8125rem;
-  text-align: center;
-  font-weight: 400;
-  text-transform: uppercase;
-  padding: 0.6875rem 1.0625rem;
+  font-size: 0.85rem;
+  padding: 0.7rem 1.3rem;
   text-decoration: none;
 }
+
 .btn:hover {
   background-color: #f07e6a;
   color: #fff;
@@ -320,25 +321,33 @@ span {
 
 .action {
   width: 100%;
-  padding: 7.5rem;
+  padding: clamp(3rem, 8vw, 7.5rem) 1rem;
   background: url(https://templatemo.com/templates/templatemo_548_training_studio/assets/images/cta-bg.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
 }
+
+.action-box {
+  max-width: 800px;
+  margin: auto;
+}
+
 .action-box h1 {
-  font-size: 2.25rem;
+  font-size: clamp(1.5rem, 4vw, 2.3rem);
   text-transform: uppercase;
   font-weight: 800;
   color: #fff;
   letter-spacing: 1px;
 }
+
 .action-box p {
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
   color: #fff;
-  margin: 0.9375rem 0px 1.5625rem 0px;
+  margin: 1rem 0 1.5rem;
 }
+
 .classes {
   display: grid;
   margin-bottom: 5rem;
@@ -788,9 +797,13 @@ footer {
     font-size: 1.2rem;
     color: #000;
   }
-  .hero-content{
-    margin-top: 2rem;
+  .hero-content h1 {
+    line-height: 1.2;
+  }
 
+  .btn {
+    width: 100%;
+    max-width: 250px;
   }
 }
 
