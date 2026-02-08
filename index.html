@@ -491,17 +491,25 @@
 const header = document.querySelector("header");
 const hero = document.querySelector(".video-hero");
 
-window.addEventListener("scroll", () => {
-  const heroBottom = hero.offsetHeight - 80; 
-  // 80 = header height adjustment
+function updateHeader() {
+  const heroHeight = hero.offsetHeight;
 
-  if (window.scrollY > heroBottom) {
-    header.classList.add("scrolled");
+  if (window.scrollY >= heroHeight - header.offsetHeight) {
+    header.classList.add("scrolled");   // white after hero
   } else {
-    header.classList.remove("scrolled");
+    header.classList.remove("scrolled"); // dark on hero
   }
-});
+}
+
+/* run on scroll */
+window.addEventListener("scroll", updateHeader);
+
+/* run immediately on page load */
+window.addEventListener("load", updateHeader);
 </script>
+
+
+
 
   </body>
 </html>
