@@ -48,7 +48,7 @@
               <li><a href="#classes">Classes</a></li>
               <li><a href="#schedule">Schedules</a></li>
               <li><a href="#contact">Contact</a></li>
-              <li><a href="#" class="btn" >Sign Up</a></li>
+              <li><a href="#" class="btn">Sign Up</a></li>
             </ul>
           </div>
         </nav>
@@ -278,72 +278,65 @@
       </div>
     </section>
 
+    <!-- Schedule Table Secion -->
 
-     <!-- Schedule Table Secion -->
+    <section class="schedule" id="schedule">
+      <div class="choose-program container">
+        <h1>OUR <span>Classes</span></h1>
+        <img
+          src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/line-dec.png"
+          alt=""
+        />
+        <p>
+          Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed
+          viverra
+          <br />
+          ipsum dolor, ultricies fermentum massa consequat eu.
+        </p>
+      </div>
 
-     <section class="schedule" id="schedule">
-       <div class="choose-program container">
-      <h1>OUR <span>Classes</span></h1>
-      <img
-        src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/line-dec.png"
-        alt=""
-      />
-      <p>
-        Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra
-        <br />
-        ipsum dolor, ultricies fermentum massa consequat eu.
-      </p>
-       </div>
+      <div class="table-overlay">
+        <!-- Days -->
+        <div class="days">
+          <span class="active">Monday</span> / <span>Tuesday</span> /
+          <span>Wednesday</span> / <span>Thursday</span> /
+          <span>Friday</span>
+        </div>
 
-      
-  <div class="table-overlay">
+        <!-- TABLE -->
+        <div class="table-grid">
+          <!-- Row 1 -->
+          <div class="cell title">Fitness Class</div>
+          <div class="cell">10:00AM - 11:30AM</div>
+          <div class="cell"></div>
+          <div class="cell trainer">William G. Stewart</div>
 
-    <!-- Days -->
-    <div class="days">
-      <span class="active">Monday</span> /
-      <span>Tuesday</span> /
-      <span>Wednesday</span> /
-      <span>Thursday</span> /
-      <span>Friday</span>
-    </div>
+          <!-- Row 2 -->
+          <div class="cell title">Muscle Training</div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell trainer">Paul D. Newman</div>
 
-    <!-- TABLE -->
-    <div class="table-grid">
+          <!-- Row 3 -->
+          <div class="cell title">Body Building</div>
+          <div class="cell"></div>
+          <div class="cell">2:00PM - 3:30PM</div>
+          <div class="cell trainer">Boyd C. Harris</div>
 
-      <!-- Row 1 -->
-      <div class="cell title">Fitness Class</div>
-      <div class="cell">10:00AM - 11:30AM</div>
-      <div class="cell"></div>
-      <div class="cell trainer">William G. Stewart</div>
+          <!-- Row 4 -->
+          <div class="cell title">Yoga Training Class</div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell trainer">Hector T. Daigle</div>
 
-      <!-- Row 2 -->
-      <div class="cell title">Muscle Training</div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell trainer">Paul D. Newman</div>
-
-      <!-- Row 3 -->
-      <div class="cell title">Body Building</div>
-      <div class="cell"></div>
-      <div class="cell">2:00PM - 3:30PM</div>
-      <div class="cell trainer">Boyd C. Harris</div>
-
-      <!-- Row 4 -->
-      <div class="cell title">Yoga Training Class</div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell trainer">Hector T. Daigle</div>
-
-      <!-- Row 5 -->
-      <div class="cell title">Advanced Training</div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell trainer">Bret D. Bowers</div>
-
-    </div>
-  </div>
-</section>
-
+          <!-- Row 5 -->
+          <div class="cell title">Advanced Training</div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell trainer">Bret D. Bowers</div>
+        </div>
+      </div>
+    </section>
 
     <!-- Card-section -->
 
@@ -420,7 +413,6 @@
     </section>
 
     <!-- Contact -->
-     
 
     <section class="contact-section" id="contact">
       <div class="map">
@@ -435,7 +427,6 @@
         ></iframe>
       </div>
 
-      
       <div class="form">
         <div class="contact-form">
           <div class="row">
@@ -453,63 +444,59 @@
           <button type="submit">SEND MESSAGE</button>
         </div>
       </div>
-    </section> 
+    </section>
 
-     <footer>
+    <footer>
       <p>
         Copyright © 2020 Training Studio - Designed by <span>A.Dhagacade</span>
       </p>
-    </footer> 
+    </footer>
 
+    <!-- jacaScript Sectin -->
 
     <script>
-  const hamburger = document.querySelector(".hamburger");
-  const openIcon = document.getElementById("open-menu");
-  const closeIcon = document.getElementById("close-menu");
-  const mobileMenu = document.querySelector(".mobile-menu");
+      const hamburger = document.querySelector(".hamburger");
+      const openIcon = document.getElementById("open-menu");
+      const closeIcon = document.getElementById("close-menu");
+      const mobileMenu = document.querySelector(".mobile-menu");
 
-  function openMenu() {
-    mobileMenu.setAttribute("data-visible", "true");
-    openIcon.style.display = "none";
-    closeIcon.style.display = "block";
-    document.body.style.overflow = "hidden";
-  }
+      function openMenu() {
+        mobileMenu.setAttribute("data-visible", "true");
+        openIcon.style.display = "none";
+        closeIcon.style.display = "block";
+        document.body.style.overflow = "hidden";
+      }
 
+      function closeMenu() {
+        mobileMenu.setAttribute("data-visible", "false");
+        closeIcon.style.display = "none";
+        openIcon.style.display = "block";
+        document.body.style.overflow = "auto";
+      }
 
-  function closeMenu() {
-    mobileMenu.setAttribute("data-visible", "false");
-    closeIcon.style.display = "none";
-    openIcon.style.display = "block";
-    document.body.style.overflow = "auto";
-  }
+      openIcon.addEventListener("click", openMenu);
+      closeIcon.addEventListener("click", closeMenu);
+    </script>
 
-  openIcon.addEventListener("click", openMenu);
-  closeIcon.addEventListener("click", closeMenu);
-</script>
+    <script>
+      const header = document.querySelector("header");
+      const hero = document.querySelector(".video-hero");
 
-<script>
-const header = document.querySelector("header");
-const hero = document.querySelector(".video-hero");
+      function updateHeader() {
+        const heroHeight = hero.offsetHeight;
 
-function updateHeader() {
-  const heroHeight = hero.offsetHeight;
+        if (window.scrollY >= heroHeight - header.offsetHeight) {
+          header.classList.add("scrolled"); // white after hero
+        } else {
+          header.classList.remove("scrolled"); // dark on hero
+        }
+      }
 
-  if (window.scrollY >= heroHeight - header.offsetHeight) {
-    header.classList.add("scrolled");   // white after hero
-  } else {
-    header.classList.remove("scrolled"); // dark on hero
-  }
-}
+      /* run on scroll */
+      window.addEventListener("scroll", updateHeader);
 
-/* run on scroll */
-window.addEventListener("scroll", updateHeader);
-
-/* run immediately on page load */
-window.addEventListener("load", updateHeader);
-</script>
-
-
-
-
+      /* run immediately on page load */
+      window.addEventListener("load", updateHeader);
+    </script>
   </body>
 </html>
