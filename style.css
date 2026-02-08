@@ -151,6 +151,9 @@ span {
   transform: translateY(-100%);
   transition: transform 0.35s ease-in-out;
   z-index: 1000;
+  height: fit-content;
+  max-width:  95%;
+  margin-inline: auto;
 }
 
 .mobile-menu[data-visible="true"] {
@@ -160,6 +163,7 @@ span {
 .mobile-menu .navigation {
   padding-top: 5rem;
   text-align: center;
+ 
 }
 
 .mobile-menu h1 {
@@ -186,6 +190,9 @@ span {
 
 .mobile-menu ul li a:hover {
   color: #ed563b;
+}
+.mobile-menu .btn{
+  color: #fff;
 }
 
 /* Hero Setion */
@@ -682,7 +689,6 @@ footer {
     background-color: #fff;
     color: #000;
   }
-
   .nav-bar ul {
     display: none;
   }
@@ -779,6 +785,10 @@ footer {
   .logo h1 {
     font-size: 1.2rem;
     color: #000;
+  }
+  .hero-content{
+    margin-top: 2rem;
+
   }
 }
 
