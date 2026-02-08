@@ -113,7 +113,7 @@ span {
 .nav-bar li a:hover {
   color: #ed563b;
 }
-.nav-bar button {
+.nav-bar .btn {
   display: inline-block;
   font-size: 0.8125rem;
   padding: 0.625rem 1.0625rem;
@@ -127,7 +127,7 @@ span {
   line-height: 1.25rem;
   border: none;
 }
-.nav-bar button:hover {
+.nav-bar .btn:hover {
   background-color: #f07e6a;
   color: #ed563b;
 }
